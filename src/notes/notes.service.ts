@@ -27,7 +27,6 @@ export class NotesService {
 
 	updateNoteById(id: string, note: INote): INote {
 		const index = this.notes.findIndex((note) => note.id === id);
-		const prevNote = this.notes[index];
 
 		this.notes[index] = {
 			...note,
